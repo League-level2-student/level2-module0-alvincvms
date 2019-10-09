@@ -27,11 +27,11 @@ public class _01_RobotRace {
 			robots[i] = x;
 		}
 	//5. use another for loop to iterate through the array and make each robot move 
-	//   a random amount less than 50.
+	//   a random amount less than 75.
 		while(robotsY[0] > 0) {
 		
 		for(int i = 0; i < robots.length; i++) {
-			int x = new Random().nextInt(50);
+			int x = new Random().nextInt(75);
 			robots[i].move(x);
 			robotsY[i] = robots[i].getY();
 			Arrays.sort(robotsY);
@@ -41,7 +41,7 @@ public class _01_RobotRace {
 		}
 	//7. declare that robot the winner and throw it a party!
 		Arrays.sort(robotsY);
-		JOptionPane.showMessageDialog(null, unfinished);
+		JOptionPane.showMessageDialog(null, robots[0].toString() + "won!");
 	//8. try different races with different amounts of robots.
 
 	//9. make the robots race around a circular track.
