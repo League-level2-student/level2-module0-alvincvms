@@ -40,8 +40,7 @@ public class _01_RobotRace {
 	//6. use a while loop to repeat step 5 until a robot has reached the top of the screen.
 		}
 	//7. declare that robot the winner and throw it a party!
-		Arrays.sort(robotsY);
-		JOptionPane.showMessageDialog(null, robots[0].toString() + "won!");
+		JOptionPane.showMessageDialog(null, "race finished");
 	//8. try different races with different amounts of robots.
 
 	//9. make the robots race around a circular track.
